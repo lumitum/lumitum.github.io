@@ -1,0 +1,81 @@
+/**************************************************/
+/* Fonts */
+/**************************************************/
+@font-face {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  src: url("../webfonts/fa-brands-400.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  src: url("../webfonts/fa-solid-900.ttf") format("truetype");
+}
+@font-face {
+  font-family: "FiraSans";
+  src: url("../webfonts/FiraSans-Regular.otf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../webfonts/Montserrat-Bold.otf") format("truetype");
+}
+
+body {
+  background: #ffffff;
+  background-image: radial-gradient(#585cd047 1px, #ffffff 1px);
+  background-size: 20px 20px;
+}
+
+#lumitum-logo #text {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.065rem;
+  letter-spacing: .25rem;
+  line-height: 1.438rem;
+  position: relative;
+  text-transform: uppercase;
+  top: .25rem;
+}
+
+.tile {
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  transition: background-color 0.5s ease, transform 0.5s ease;
+}
+.tile:hover {
+  background: linear-gradient(135deg, #6b7280, #4a4e54) !important;
+  transform: scale(1.1);
+}
+.tile p {
+  display: none;
+}
+.tile:hover p {
+  display: block;
+}
+
+.tile.one {
+  background: linear-gradient(120deg, #8492fe, #6773f9);
+}
+
+.tile.two {
+  background: linear-gradient(150deg, #6773f9, #63a8ff);
+}
+
+.tile.three {
+  background: linear-gradient(160deg, #2d35ed, #4a54f4);
+}
+
+.tile.four {
+  background: linear-gradient(180deg, #4a54f4 0%, #3b45c9 50%, #2d35ed 100%);
+}
+
+.tile.five {
+  background: linear-gradient(135deg, #63a8ff 0%, #4a54f4 100%);
+}
+
+.tile.six {
+  background: linear-gradient(45deg, #a3b0ff 0%, #8492fe 100%);
+}
