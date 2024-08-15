@@ -3,6 +3,15 @@
 /**************************************************/
 tailwind.config = {
   theme: {
+    container: {
+      screens: {
+        sm: '600px',
+        md: '700px',
+        lg: '800px',
+        xl: '900px',
+        '2xl': '1000px',
+      },
+    },
     extend: {
       fontFamily: {
         sans: ["FiraSans", "sans-serif"],
@@ -70,6 +79,25 @@ const handleFormSubmit = (e) => {
   window.location.href = mailtoLink;
 };
 
+
+/**************************************************/
+/* Animation to walk through the tiles when idleing */
+/**************************************************/
+const walkthroughAnimation = (tiles, index, prevTimer) => {
+  if (index > -1) {
+    clearTimeout(prevTimer);
+    tiles.removeClass('tile-hover');
+    tiles.eq(index).addClass('tile-hover');
+  }
+  index = (index + 1) % tiles.length;
+  let timer = setTimeout(() => walkthroughAnimation(tiles, index, timer), 2000);
+  
+  tiles.on('mouseover', () => {
+    tiles.removeClass('tile-hover');
+    clearTimeout(timer);
+  });
+};
+
 /**************************************************/
 /* Document ready handler */
 /**************************************************/
@@ -87,6 +115,9 @@ const onReady = () => {
 
   // Handle form submit button
   $("#contact-form").on("submit", (e) => handleFormSubmit(e));
+
+  // Initiate tiles walk through animation
+  walkthroughAnimation($(".tile"), -1);
 };
 
 /**************************************************/

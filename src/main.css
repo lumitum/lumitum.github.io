@@ -43,16 +43,16 @@ body {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  transition: background-color 0.5s ease, transform 0.5s ease;
+  transition: transform 0.5s ease;
 }
-.tile:hover {
+.tile-hover, .tile:hover {
   background: linear-gradient(135deg, #6b7280, #4a4e54) !important;
   transform: scale(1.1);
 }
 .tile p {
   display: none;
 }
-.tile:hover p {
+.tile-hover p, .tile:hover p {
   display: block;
 }
 
