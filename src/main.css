@@ -20,7 +20,21 @@
   src: url("../webfonts/Montserrat-Bold.otf") format("truetype");
 }
 
+/**************************************************/
+/* TailwindCSS containers */
+/**************************************************/
+.container { max-width: 100%; }
+@media (min-width: 600px) { .container { max-width: 600px; } }
+@media (min-width: 700px) { .container { max-width: 700px; } }
+@media (min-width: 800px) { .container { max-width: 800px; } }
+@media (min-width: 900px) { .container { max-width: 900px; } }
+@media (min-width: 1000px) { .container { max-width: 1000px; } }
+
+/**************************************************/
+/* Other customization */
+/**************************************************/
 body {
+  font-family: FiraSans, sans-serif;
   background: #ffffff;
   background-image: radial-gradient(#585cd047 1px, #ffffff 1px);
   background-size: 20px 20px;

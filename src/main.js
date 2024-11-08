@@ -1,26 +1,4 @@
 /**************************************************/
-/* External libraries */
-/**************************************************/
-tailwind.config = {
-  theme: {
-    container: {
-      screens: {
-        sm: '600px',
-        md: '700px',
-        lg: '800px',
-        xl: '900px',
-        '2xl': '1000px',
-      },
-    },
-    extend: {
-      fontFamily: {
-        sans: ["FiraSans", "sans-serif"],
-      },
-    },
-  },
-};
-
-/**************************************************/
 /* Helper to create the wanted address */
 /**************************************************/
 const createAddress = (i) => {
@@ -36,7 +14,7 @@ const createAddress = (i) => {
 /* Crawler and Mailto spambot prevention */
 /**************************************************/
 const createMailtoAnchor = (i) => {
-  return `<a class="hover:text-blue-500" href="${
+  return `<a class="hover:text-blue-600 hover:underline" href="${
     "mai" + "lto" + ":" + createAddress(i)
   }">${createAddress(i)}</a>`;
 };
@@ -118,6 +96,9 @@ const onReady = () => {
 
   // Initiate tiles walk through animation
   walkthroughAnimation($(".tile"), -1);
+
+  // Say hello to developer
+  console.log("Hello Developer! 👋");
 };
 
 /**************************************************/
