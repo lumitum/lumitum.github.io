@@ -97,6 +97,25 @@ const onReady = () => {
   // Initiate tiles walk through animation
   walkthroughAnimation($(".tile"), -1);
 
+  // Google Analytics consent banner
+  $("#cookie-accept").on("click", () => {
+    $("#cookie-banner").addClass("hidden");
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = "https://www.googletagmanager.com/gtag/js?id=G-QKVBSJPNM2";
+    document.head.appendChild(script);
+
+    script.onload = () => {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QKVBSJPNM2');
+    };
+  });
+  $("#cookie-decline").on("click", () => {
+    $("#cookie-banner").addClass("hidden");
+  });
+
   // Say hello to developer
   console.log("Hello Developer! 👋");
 };

@@ -19,6 +19,13 @@
     <script defer src="./src/main.js?v=3" type="text/javascript"></script>
   </head>
   <body class="">
+    <div id="cookie-banner" class="bg-blue-600 text-white p-4 flex flex-col items-start md:flex-row md:items-center justify-between space-y-2 md:space-y-0 z-50">
+      <p class="text-sm md:text-base">Sivusto haluaa käyttää evästeitä analytiikkaan. Hyväksytkö evästeiden käytön?</p>
+      <div class="flex space-x-2">
+        <button id="cookie-accept" class="bg-white text-blue-600 px-4 py-2 rounded hover:bg-gray-200">Hyväksy</button>
+        <button id="cookie-decline" class="bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300">Hylkää</button>
+      </div>
+    </div>
     <main id="page-content" class="container mx-auto p-4">
       <section id="hero" class="w-full p-4 mb-4 mt-10">
         <a
