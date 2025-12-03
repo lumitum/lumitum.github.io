@@ -33,7 +33,7 @@
 /**************************************************/
 /* Other customization */
 /**************************************************/
-body {
+#main-bg {
   font-family: FiraSans, sans-serif;
   background: #ffffff;
   background-image: radial-gradient(#585cd047 1px, #ffffff 1px);

@@ -3,7 +3,6 @@
 /**************************************************/
 const createAddress = (i) => {
   let part1 = "tcatnoc".split("").reverse().join("")
-  if (i === 1) part1 = "nenotsum.iruam".split("").reverse().join("");
   if (i === 2) part1 = "nenirajap.akkuj".split("").reverse().join("");
   const part2 = String.fromCharCode(Math.pow(2, 6));
   const part3 = "moc.mutimul".split("").reverse().join("");
@@ -22,9 +21,9 @@ const createMailtoAnchor = (i) => {
 const createPhoneNumber = (i) => {
   if (i !== 1 && i !== 2) return "";
   const part1 = ".huP".split("").reverse().join("");
-  const part2 = (i === 1 ? "040 " : "040 ").split("").reverse().join("");
-  const part3 = (i === 1 ? "875 " : "257 ").split("").reverse().join("");
-  const part4 = (i === 1 ? "5859 " : "3626 ").split("").reverse().join("");
+  const part2 = "040 ".split("").reverse().join("");
+  const part3 = "257 ".split("").reverse().join("");
+  const part4 = "3626 ".split("").reverse().join("");
   return part1 + part2 + part3 + part4;
 };
 
