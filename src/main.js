@@ -1,33 +1,4 @@
 /**************************************************/
-/* Helper to create the wanted address */
-/**************************************************/
-const createAddress = (i) => {
-  let part1 = "tcatnoc".split("").reverse().join("")
-  if (i === 2) part1 = "nenirajap.akkuj".split("").reverse().join("");
-  const part2 = String.fromCharCode(Math.pow(2, 6));
-  const part3 = "moc.mutimul".split("").reverse().join("");
-  return part1 + part2 + part3;
-};
-
-/**************************************************/
-/* Crawler and Mailto spambot prevention */
-/**************************************************/
-const createMailtoAnchor = (i) => {
-  return `<a class="hover:text-blue-600 hover:underline" href="${
-    "mai" + "lto" + ":" + createAddress(i)
-  }">${createAddress(i)}</a>`;
-};
-
-const createPhoneNumber = (i) => {
-  if (i !== 1 && i !== 2) return "";
-  const part1 = ".huP".split("").reverse().join("");
-  const part2 = "040 ".split("").reverse().join("");
-  const part3 = "257 ".split("").reverse().join("");
-  const part4 = "3626 ".split("").reverse().join("");
-  return part1 + part2 + part3 + part4;
-};
-
-/**************************************************/
 /* Form submit handler */
 /**************************************************/
 const handleFormSubmit = (e) => {
@@ -47,7 +18,7 @@ const handleFormSubmit = (e) => {
   }
 
   // Construct mailto link
-  let mailtoLink = "mailto:" + createAddress(0);
+  let mailtoLink = "mailto:" + atob('Y29udGFjdEBsdW1pdHVtLmNvbQ==');
   if (queryParams.length > 0) {
     mailtoLink += "?" + queryParams.join("&");
   }
@@ -83,12 +54,12 @@ const onReady = () => {
   $("#page-footer #footer-year").text(new Date().getFullYear());
 
   // Add mailto anchors to prevent spambots
-  $("#mailtoAddress1").html(createMailtoAnchor(1));
-  $("#mailtoAddress2").html(createMailtoAnchor(2));
+  $("#mailtoAddress").html('<a class="hover:text-blue-600 hover:underline" href="mailto:'
+    +atob('anVra2EucGFqYXJpbmVuQGx1bWl0dW0uY29t')+'">'+atob('anVra2EucGFqYXJpbmVuQGx1bWl0dW0uY29t')+'</a>');
 
   // Add phone numbers to prevent crawlers
-  $("#phoneNumber1").html(createPhoneNumber(1));
-  $("#phoneNumber2").html(createPhoneNumber(2));
+  $("#phoneNumber").html('<a class="hover:text-blue-600 hover:underline" href="tel:'
+    +atob('MDQwNzUyNjI2Mw==')+'">Puh. '+atob('MDQwNzUyNjI2Mw==')+'</a>');
 
   // Handle form submit button
   $("#contact-form").on("submit", (e) => handleFormSubmit(e));
