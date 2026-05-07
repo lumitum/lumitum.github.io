@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Lumitum Oy" />
     <title>Lumitum Oy</title>
-    <link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="./lib/fontawesome-all.min.css"
@@ -23,8 +23,8 @@
       <div id="cookie-banner" class="bg-blue-600 text-white p-4 flex flex-col items-start md:flex-row md:items-center justify-between space-y-2 md:space-y-0 z-50">
         <p class="text-sm md:text-base">Sivusto haluaa käyttää evästeitä analytiikkaan. Hyväksytkö evästeiden käytön?</p>
         <div class="flex space-x-2">
-          <button id="cookie-accept" class="bg-white text-blue-600 px-4 py-2 rounded hover:bg-gray-200">Hyväksy</button>
-          <button id="cookie-decline" class="bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300">Hylkää</button>
+          <button id="cookie-accept" class="bg-white text-blue-800 px-4 py-2 rounded-xl hover:bg-gray-200">Hyväksy</button>
+          <button id="cookie-decline" class="bg-gray-200 text-gray-800 px-4 py-2 rounded-xl hover:bg-gray-300">Hylkää</button>
         </div>
       </div>
       <main id="page-content" class="container mx-auto p-4 pb-20">
@@ -34,7 +34,7 @@
             id="lumitum-logo"
             class="flex items-center space-x-2 mb-14"
           >
-            <img id="image" src="images/logo.svg" />
+            <img id="image" src="images/lumitum-logo.svg" style="height: 60px;"/>
             <span id="text" class="font-bold text-gray-800 hover:text-blue-600"
               >Lumitum</span
             >
@@ -43,7 +43,7 @@
             class="text-4xl lg:text-5xl lg:leading-tight font-bold text-gray-800 mb-10"
             id="typing-effect-title"
           >
-            Tarkkaa koodia — kokemuksella
+            Tarkkaa koodia <span class="text-blue-600">—</span> kokemuksella<span class="text-blue-600">.</span>
           </h1>
           <p class="text-lg text-gray-700 mb-10">
             Lumitum suunnittelee ja toteuttaa ohjelmistoratkaisuja, joissa yhdistyvät selkeä rakenne, korkea suorituskyky ja helppo ylläpidettävyys. 
@@ -54,31 +54,31 @@
           id="tiles"
           class="w-full p-4 mb-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14"
         >
-          <article class="tile one text-white rounded p-10">
+          <article class="tile one text-white rounded-3xl p-10">
             <h2 class="text-xl font-bold uppercase">Drupal</h2>
             <p class="mt-2">
               Teemojen ja moduulien kehitys sekä asennukset ja ylläpito.
             </p>
           </article>
-          <article class="tile two text-white rounded p-10">
+          <article class="tile two text-white rounded-3xl p-10">
             <h2 class="text-xl font-bold uppercase">WordPress</h2>
             <p class="mt-2">
               Teemojen ja pluginien kehitys sekä asennukset ja ylläpito.
             </p>
           </article>
-          <article class="tile three text-white rounded p-10">
+          <article class="tile three text-white rounded-3xl p-10">
             <h2 class="text-xl font-bold uppercase">Laravel</h2>
             <p class="mt-2">Kehitystyöt vankalla kokemuksella!</p>
           </article>
-          <article class="tile four text-white rounded p-10">
+          <article class="tile four text-white rounded-3xl p-10">
             <h2 class="text-xl font-bold uppercase">Google Cloud</h2>
             <p class="mt-2">Ympäristöjen määrittely ja toteutus!</p>
           </article>
-          <article class="tile five text-white rounded p-10">
+          <article class="tile five text-white rounded-3xl p-10">
             <h2 class="text-xl font-bold uppercase">Node.JS</h2>
             <p class="mt-2">Kehitystyöt vankalla kokemuksella!</p>
           </article>
-          <article class="tile six text-white rounded p-10">
+          <article class="tile six text-white rounded-3xl p-10">
             <h2 class="text-xl font-bold uppercase">React</h2>
             <p class="mt-2">Kehitystyöt vankalla kokemuksella!</p>
           </article>
@@ -101,7 +101,7 @@
                 name="title"
                 id="title"
                 placeholder="Otsikko"
-                class="block w-full px-0 py-2 border-b border-gray-300 bg-transparent rounded-none focus:outline-none focus:border-blue-500 sm:text-sm"
+                class="block w-full px-0 py-2 text-md border-b border-gray-300 bg-transparent rounded-none focus:outline-none focus:border-blue-500"
               />
             </div>
             <div>
@@ -109,7 +109,7 @@
                 name="message"
                 id="message"
                 placeholder="Viesti"
-                class="block w-full px-0 py-2 border-b border-gray-300 bg-transparent rounded-none focus:outline-none focus:border-blue-500 sm:text-sm"
+                class="block w-full px-0 py-2 text-md border-b border-gray-300 bg-transparent rounded-none focus:outline-none focus:border-blue-500"
                 rows="4"
               ></textarea>
             </div>
@@ -117,7 +117,7 @@
               <input
                 type="submit"
                 value="Lähetä tästä"
-                class="cursor-pointer bg-blue-600 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                class="cursor-pointer bg-blue-600 hover:bg-gray-600 text-white px-4 py-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
           </form>

@@ -12,12 +12,16 @@
   src: url("../webfonts/fa-solid-900.ttf") format("truetype");
 }
 @font-face {
-  font-family: "FiraSans";
-  src: url("../webfonts/FiraSans-Regular.otf") format("truetype");
+  font-family: "IBMPlexSans";
+  src: url("../webfonts/IBMPlexSans-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Montserrat";
-  src: url("../webfonts/Montserrat-Bold.otf") format("truetype");
+  font-family: "SpaceGrotesk-Bold";
+  src: url("../webfonts/SpaceGrotesk-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SpaceGrotesk-Regular";
+  src: url("../webfonts/SpaceGrotesk-Regular.ttf") format("truetype");
 }
 
 /**************************************************/
@@ -34,15 +38,22 @@
 /* Other customization */
 /**************************************************/
 #main-bg {
-  font-family: FiraSans, sans-serif;
   background: #ffffff;
   background-image: radial-gradient(#585cd047 1px, #ffffff 1px);
   background-size: 20px 20px;
 }
 
+* {
+  font-family: IBMPlexSans, sans;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: SpaceGrotesk-Regular, serif;
+}
+
 #lumitum-logo #text {
-  font-family: Montserrat, sans-serif;
-  font-size: 1.065rem;
+  font-family: SpaceGrotesk-Bold, serif;
+  font-size: 1.265rem;
   letter-spacing: 0.25rem;
   line-height: 1.438rem;
   position: relative;
