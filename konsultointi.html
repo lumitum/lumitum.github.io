@@ -2,11 +2,11 @@
 <html lang="fi" data-theme="light">
   <head>
     <meta charset="utf-8" />
-    <meta name="description" content="Lumitum Oy" />
-    <meta name="keywords" content="Lumitum" />
+    <meta name="description" content="Konsultointi - Lumitum Oy" />
+    <meta name="keywords" content="Lumitum, Konsultointi" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Lumitum Oy" />
-    <title>Lumitum Oy</title>
+    <title>Konsultointi - Lumitum Oy</title>
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./lib/tailwind.min.css" type="text/css" />
     <link rel="stylesheet" href="./src/main.css?v=5" type="text/css" />
@@ -35,56 +35,75 @@
           <nav id="main-nav">
             <ul class="flex items-center space-x-8 font-semibold">
               <li><a href="/" class="text-white hover:text-blue-200">Etusivu</a></li>
-              <li><a href="/konsultointi" class="text-white hover:text-blue-200">Konsultointi</a></li>
+              <li><a href="/konsultointi" class="text-blue-200">Konsultointi</a></li>
             </ul>
           </nav>
         </div>
       </section>
       <main id="page-content" class="container mx-auto p-4 pb-20">
-        <section id="hero" class="w-full p-4 mb-4 mt-14">
-          <h1
-            class="text-4xl lg:text-5xl lg:leading-tight font-bold text-gray-800 mb-10"
-            id="typing-effect-title"
-          >
-            Tarkkaa koodia <span class="text-blue-600">—</span> kokemuksella<span class="text-blue-600">.</span>
+        <section id="konsultointi-hero" class="w-full p-4 mb-4 mt-14">
+          <p class="text-blue-600 font-bold uppercase tracking-widest mb-4">Konsultointi</p>
+          <h1 class="text-4xl lg:text-5xl lg:leading-tight font-bold text-gray-800 mb-6">
+            Jukka Pajarinen <span class="text-blue-600">—</span> sinun ohjelmistokonsulttisi<span class="text-blue-600">.</span>
           </h1>
-          <p class="text-lg text-gray-700 mb-10">
-            Lumitum suunnittelee ja toteuttaa ohjelmistoratkaisuja, joissa yhdistyvät selkeä rakenne, korkea suorituskyky ja helppo ylläpidettävyys. 
-            Olemme mukana projektissasi alusta lähtien — tai tarjoamme asiantuntija-apua juuri sinne, missä sitä eniten tarvitaan!
-          </p>
         </section>
-        <section
-          id="tiles"
-          class="w-full p-4 mb-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14"
-        >
-          <article class="tile one text-white rounded-3xl p-10">
-            <h2 class="text-xl font-bold uppercase">Drupal</h2>
-            <p class="mt-2">
-              Teemojen ja moduulien kehitys sekä asennukset ja ylläpito.
+        <section id="profiili" class="w-full p-4 mb-4 grid grid-cols-1 lg:grid-cols-5 gap-10 items-start">
+          <div class="lg:col-span-2">
+            <a href="https://github.com/jukkapajarinen" target="_blank" class="block group">
+              <img
+                src="images/Jukka_website_optimized.jpg"
+                alt="Jukka Pajarinen"
+                class="w-full h-auto rounded-3xl shadow-lg object-cover transform transition-transform duration-300 group-hover:scale-[1.02]"
+              >
+            </a>
+          </div>
+          <div class="lg:col-span-3">
+            <p class="text-gray-700 font-medium mb-6">
+              Olen Diplomi-Insinööri ja pystyn toimimaan laajasti ohjelmistotuotannon eri osa-alueilla. Minulla on <b class="font-black">paljon kokemusta</b> web-kehityksestä, mobiilikehityksestä ja UI/UX-suunnittelutöistä.
             </p>
-          </article>
-          <article class="tile two text-white rounded-3xl p-10">
-            <h2 class="text-xl font-bold uppercase">WordPress</h2>
-            <p class="mt-2">
-              Teemojen ja pluginien kehitys sekä asennukset ja ylläpito.
+            <p class="text-gray-700 font-medium mb-6">
+              Laravel, Drupal, WP ja Node.js kehittäjä. Linux käyttäjä.
             </p>
-          </article>
-          <article class="tile three text-white rounded-3xl p-10">
-            <h2 class="text-xl font-bold uppercase">Laravel</h2>
-            <p class="mt-2">Kehitystyöt vankalla kokemuksella!</p>
-          </article>
-          <article class="tile four text-white rounded-3xl p-10">
-            <h2 class="text-xl font-bold uppercase">Google Cloud</h2>
-            <p class="mt-2">Ympäristöjen määrittely ja toteutus!</p>
-          </article>
-          <article class="tile five text-white rounded-3xl p-10">
-            <h2 class="text-xl font-bold uppercase">Node.JS</h2>
-            <p class="mt-2">Kehitystyöt vankalla kokemuksella!</p>
-          </article>
-          <article class="tile six text-white rounded-3xl p-10">
-            <h2 class="text-xl font-bold uppercase">React</h2>
-            <p class="mt-2">Kehitystyöt vankalla kokemuksella!</p>
-          </article>
+            <div class="space-y-6 mb-8">
+              <div class="border-l-4 border-blue-200 pl-4">
+                <h3 class="font-bold text-gray-800">Diplomityö 2020 — Web-käyttöliittymän hyväksymistestauksen priorisointi painotetun verkon avulla</h3>
+                <p class="text-gray-700 mt-1 mb-2">
+                  Tampereen yliopisto, toimeksiantajana WordDive. Toteutin hyväksymistestauksen automaatiojärjestelmän ja kehitin painotettuun verkkoon perustuvan menetelmän testitapausten priorisointiin.
+                </p>
+                <a href="https://trepo.tuni.fi/bitstream/handle/10024/119031/PajarinenJukka.pdf" target="_blank" class="text-blue-600 font-bold hover:underline">Lue diplomityö ↗</a>
+              </div>
+              <div class="border-l-4 border-blue-200 pl-4">
+                <h3 class="font-bold text-gray-800">Opinnäytetyö 2014 — TeamViewer etäopetuksessa: Case Jilab Oy</h3>
+                <p class="text-gray-700 mt-1 mb-2">
+                  Karelia-ammattikorkeakoulu, toimeksiantajana Jilab Oy. Selvitin ja rakensin Jilab Oy:lle TeamVieweriin perustuvan etäopetusratkaisun perinteistä lähiopetusta korvaamaan.
+                </p>
+                <a href="https://www.theseus.fi/bitstream/handle/10024/72055/Pajarinen_Jukka.pdf" target="_blank" class="text-blue-600 font-bold hover:underline">Lue opinnäytetyö ↗</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="ura" class="w-full p-4 mb-4">
+          <blockquote class="border-l-4 border-blue-600 pl-6 py-1 text-xl font-medium text-gray-800 max-w-3xl">
+            Urani varrella olen ollut mukana lukuisissa projekteissa — ensin työntekijänä useissa eri yrityksissä, ja vuodesta 2020 lähtien yrittäjänä oman yritykseni kautta.
+          </blockquote>
+        </section>
+        <section id="osaaminen" class="w-full p-4 mb-4 mt-10">
+          <h2 class="font-bold text-xl text-gray-800 uppercase mb-6">Osaaminen</h2>
+          <div class="flex flex-wrap gap-3 mb-6">
+            <span class="px-4 py-2 rounded-full bg-blue-50 text-blue-800 font-semibold text-sm border border-blue-200">Laravel</span>
+            <span class="px-4 py-2 rounded-full bg-blue-50 text-blue-800 font-semibold text-sm border border-blue-200">Drupal</span>
+            <span class="px-4 py-2 rounded-full bg-blue-50 text-blue-800 font-semibold text-sm border border-blue-200">WordPress</span>
+            <span class="px-4 py-2 rounded-full bg-blue-50 text-blue-800 font-semibold text-sm border border-blue-200">Node.js</span>
+            <span class="px-4 py-2 rounded-full bg-blue-50 text-blue-800 font-semibold text-sm border border-blue-200">React</span>
+            <span class="px-4 py-2 rounded-full bg-blue-50 text-blue-800 font-semibold text-sm border border-blue-200">PHP</span>
+            <span class="px-4 py-2 rounded-full bg-blue-50 text-blue-800 font-semibold text-sm border border-blue-200">TypeScript</span>
+            <span class="px-4 py-2 rounded-full bg-blue-50 text-blue-800 font-semibold text-sm border border-blue-200">JavaScript</span>
+            <span class="px-4 py-2 rounded-full bg-blue-50 text-blue-800 font-semibold text-sm border border-blue-200">Java</span>
+            <span class="px-4 py-2 rounded-full bg-blue-50 text-blue-800 font-semibold text-sm border border-blue-200">Google Cloud</span>
+            <span class="px-4 py-2 rounded-full bg-blue-50 text-blue-800 font-semibold text-sm border border-blue-200">Azure</span>
+            <span class="px-4 py-2 rounded-full bg-blue-50 text-blue-800 font-semibold text-sm border border-blue-200">Linux</span>
+          </div>
+          <a href="https://github.com/jukkapajarinen" target="_blank" class="inline-flex items-center gap-1 text-blue-600 font-bold hover:underline">Katso koodini GitHubissa ↗</a>
         </section>
       </main>
     </div>
